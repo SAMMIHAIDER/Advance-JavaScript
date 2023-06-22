@@ -18,11 +18,11 @@
   // define callback Asynchronous
                                 //   it  never wait for each operations to complete ,after that it execute the next operations
      //example with code 
-                           setTimeout(function () {
-                            console.log("Baluchi")
-                           }, 5000);
+                        //    setTimeout(function () {           //  Asynchronous function
+                        //     console.log("Baluchi")
+                        //    }, 5000);
 
-                           console.log("sami");
+                        //    console.log("sami");
 
 
 
