@@ -7,7 +7,7 @@
                             // 3>  Rejection
 
   // 1>  pending
-                      //   pending  mean waiting time before complete works 
+                      //   pending  mean waiting time before promise success or failed 
 
  // 2>  resolve       
                      //  put condition in code (if condition are true then resolve function are automatically call ) ;
