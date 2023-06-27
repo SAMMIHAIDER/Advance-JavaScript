@@ -1,6 +1,12 @@
 // define Promise
 //                 Promise mean real world promise such as one man promise to another man
 
+
+//  promise structure
+                     //   1> first of all using (new) keyword and after using (Promise) keyword
+                     //   2> second create a function with tow parameter such as (resolve,rejection);
+                     //   3> may be simple function or arrow function
+
 // three stages in Promise
                             // 1>  pending
                             // 2>  resolve
@@ -11,34 +17,19 @@
 
  // 2>  resolve       
                      //  put condition in code (if condition are true then resolve function are automatically call ) ;
-                    //  1>  if condition are true  then we used javascript function then();
+                    //  .then() function or keyword are using to get  a value if condition promise true  mean (promise resolve)
     
  // 3>  Rejection
                     //  put condition in code (if condition are false then rejection function are automatically call ) ;  
-                       //  1> if condition are false then we used a javascript function catch();
+                       //  .catch() function or keyword are using to  get a value if condition promise false mean (promise rejection)
 
-// Example promise 
-                //     function prom(){
-                //    return new Promise(function(resolve,rejection){
-                //       let a = 12 ;
-                //       let b = 2;
-                //       let c= a/b;
-                //       setInterval(()=>{
-                //         if (a) {
-                //             resolve(`question solve : ${c}`)
-                //           }else{
-                //             rejection(`question failed`)
-                //           }
-                //       },9000)
-                    
-                //     });}
+ // Example promise 
+//                     let proem = new Promise((resolve,rejection)=>{
+//                          setTimeout(function () {
+//                            resolve("fulfill code");
+//                          })
+//                     });
 
-                //     let ful = (result)=>{
-                //         console.log(result);
-                //     }
-
-                //     let err = (error)=>{
-                //         console.log(error);
-                //     }
-                //    prom(true).then(ful)
-                //    prom(false).catch(err)
+//                proem.then((result)=>{    // .then() function or keyword are using to get  a value 2> if not  used .then() its return promise
+//                   console.log(result);
+//                });   
